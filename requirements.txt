@@ -1,4 +1,5 @@
-numpy
-matplotlib
-pandas
-jupyter
+numpy   
+pandas   
+matplotlib   
+ipywidgets   
+notebook 
