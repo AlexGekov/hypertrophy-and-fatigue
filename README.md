@@ -13,7 +13,7 @@ Rather than relying on static performance snapshots, this simulation executes a 
 * **Exponential Decay Modeling:** Calculates dynamic fitness and fatigue curves using isolated $k$ coefficients.
 * **Grid Search Optimization:** Iterates over multiple weekly volumes (100, 150, 200) and training intervals (1 to 7 days).
 * **Algorithmic Efficiency:** Utilizes $\mathcal{O}(N)$ time-complexity `numpy` array pre-allocation.
-* **Interactive Visualization:** Includes data matrices and `matplotlib` plotting to visualize the optimal frequency.
+* **Interactive Visualization:** Includes data matrices, `matplotlib` plotting, and dynamic `ipywidgets` to visualize the optimal frequency in real-time.
 
 ## How to Run Locally
 To explore the simulation and run the interactive components:
@@ -22,3 +22,26 @@ To explore the simulation and run the interactive components:
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
+
+3. Open `hypertrophy_model.ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
+4. Select **Kernel -> Restart & Run All** to generate the data frames and interactive charts.
+
+## Project Structure
+
+* `hypertrophy_model.ipynb`: The core simulation, mathematical theory, and data analysis.
+* `requirements.txt`: Environment dependencies.
+* `.gitignore`: Standard Python and Jupyter exclusions.
+* `LICENSE`: MIT License.
+
+## Author
+
+* **Aleksandar Gekov** - *2026*
+
+## Legal & Academic Compliance
+
+This project complies with all local regulations and poses no security risks. It relies on standard mathematical modeling and generated arrays.
+
+* *Primary Reference:* Banister, E.W. (1991). Modeling Elite Athletic Performance.
+* Chiu, L. Z., & Barnes, J. L. (2003). The Fitness-Fatigue Model Revisited: Implications for Planning Short- and Long-Term Training. *Strength and Conditioning Journal*.
+* Schoenfeld, B. J. (2010). The Mechanisms of Muscle Hypertrophy and Their Application to Resistance Training. *Journal of Strength and Conditioning Research*.
+* General principles of exponential decay and impulse-response modeling in biological systems.
